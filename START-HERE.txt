@@ -1,0 +1,9 @@
+HERFIRST FULL PROJECT (MERGED)
+
+This archive contains the original HerFirst project with the Phase 3 backend patch overlaid.
+Extract the HerFirst folder to Downloads or another location. Keep a backup of your existing folder.
+Start backend using backend\start_backend.bat and frontend using frontend\start_frontend.bat.
+Backend URL: http://127.0.0.1:8000
+API docs: http://127.0.0.1:8000/docs
+
+Note: AMD Token Factory credentials are not included. The backend supports offline fallback.

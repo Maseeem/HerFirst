@@ -1,0 +1,104 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+.form-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.form-required {
+  color: var(--error);
+  font-weight: bold;
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--text-main);
+  background-color: var(--bg-card);
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 0.625rem 0.875rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--text-muted);
+  opacity: 0.8;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.form-select {
+  appearance: none;
+  padding-right: 2.25rem;
+  cursor: pointer;
+}
+
+.form-option {
+  color: var(--text-main);
+  background-color: var(--bg-card);
+  padding: 0.5rem;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 0.875rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.form-group-error .form-input,
+.form-group-error .form-textarea,
+.form-group-error .form-select {
+  border-color: var(--error);
+}
+
+.form-group-error .form-input:focus,
+.form-group-error .form-textarea:focus,
+.form-group-error .form-select:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+.form-message {
+  font-size: 0.775rem;
+  line-height: 1.4;
+  margin-top: 0.125rem;
+}
+
+.form-message-helper {
+  color: var(--text-muted);
+}
+
+.form-message-error {
+  color: var(--error);
+  font-weight: 500;
+}

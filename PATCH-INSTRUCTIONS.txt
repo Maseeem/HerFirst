@@ -1,0 +1,14 @@
+HERFIRST — FULL PROJECT PACKAGE
+
+This is a complete source project, not a patch-only archive. Extract the HerFirst folder to a normal writable location (for example, Downloads\HerFirst). Do not extract over an active project without making a backup first.
+
+STARTUP (Windows)
+1. Double-click backend\start_backend.bat and keep the window open.
+2. Double-click frontend\start_frontend.bat and keep the window open.
+3. Open http://localhost:5174/
+4. Backend health: http://127.0.0.1:8000/api/health
+5. API docs: http://127.0.0.1:8000/docs
+
+The backend supports offline project blueprint and task guidance generation. AMD Token Factory credentials are not included; optional settings belong in backend\.env, never in frontend files.
+
+For prerequisites, setup commands, tests, and troubleshooting, see README.md.
